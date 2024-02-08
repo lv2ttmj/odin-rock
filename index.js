@@ -4,8 +4,6 @@ function getComputerChoice(){
     return(randomIndex);
 }
 
-const choices = ['Rock', 'Paper', 'Scissors'];
-
 function playRound(playerSelection, computerSelection) {
     if (computerSelection == playerSelection) {
         console.log("It's a tie!");
@@ -41,6 +39,9 @@ function playGame() {
         console.log("You have won!");}
     else if (playerScore < computerScore) {
         console.log("You have lost!");}
+    else if (playerScore == computerScore) {
+        console.log("Game over, It's a tie!")
+    };
     }
 
 
